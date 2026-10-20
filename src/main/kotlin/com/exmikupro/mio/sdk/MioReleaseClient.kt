@@ -104,7 +104,7 @@ class MioReleaseClient(private val transport: MioReleaseTransport = JetBrainsMio
         release.assets.singleOrNull { it.name.endsWith(platform.assetSuffix) }
 
     companion object {
-        const val RELEASES_URL = "https://api.github.com/repos/ExMikuPro/Mio/releases"
+        const val RELEASES_URL = "https://api.github.com/repos/mio-kobo/mio/releases"
     }
 }
 

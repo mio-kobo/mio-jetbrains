@@ -45,10 +45,10 @@ class MioReleaseClientTest {
     companion object {
         private val RELEASES_JSON = """
             [
-              {"tag_name":"v0.1.0-alpha.1","draft":false,"prerelease":true,"html_url":"https://github.com/ExMikuPro/Mio/releases/tag/v0.1.0-alpha.1","assets":[
+              {"tag_name":"v0.1.0-alpha.1","draft":false,"prerelease":true,"html_url":"https://github.com/mio-kobo/mio/releases/tag/v0.1.0-alpha.1","assets":[
                 {"name":"mio_v0.1.0-alpha.1_linux_arm64.tar.gz","browser_download_url":"https://example.test/mio.tar.gz","size":100,"digest":"sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
               ]},
-              {"tag_name":"v0.1.0","draft":false,"prerelease":false,"html_url":"https://github.com/ExMikuPro/Mio/releases/tag/v0.1.0","assets":[]},
+              {"tag_name":"v0.1.0","draft":false,"prerelease":false,"html_url":"https://github.com/mio-kobo/mio/releases/tag/v0.1.0","assets":[]},
               {"tag_name":"draft","draft":true,"prerelease":false,"html_url":"https://example.test/draft","assets":[]}
             ]
         """.trimIndent()

@@ -1,17 +1,13 @@
-<p align="center">
-  <a href="assets/mio-language-support.png">
-    <img src="assets/mio-language-support.webp" alt="Mio 与 Mochi 展示 Mio — Programming Language Tools JetBrains 插件" width="650" />
-  </a>
-</p>
+
 
 <h1 align="center">Mio — Programming Language Tools</h1>
 
 <p align="center"><strong>为 Mio 编程语言打造的 JetBrains IDE 插件</strong></p>
 
 <p align="center">
-  <a href="https://github.com/ExMikuPro/Mio">Mio 项目</a> ·
-  <a href="https://github.com/ExMikuPro/Mio/releases">Releases</a> ·
-  <a href="../../docs/LANGUAGE.md">语言文档</a>
+  <a href="https://github.com/mio-kobo/mio">Mio 项目</a> ·
+  <a href="https://github.com/mio-kobo/mio/releases">Releases</a> ·
+  <a href="https://github.com/mio-kobo/mio/blob/Mio-2/docs/LANGUAGE.md">语言文档</a>
 </p>
 
 Mio — Programming Language Tools 提供 IntelliJ IDEA 和 GoLand 的 `.mio` 文件编辑、语言分析与运行支持。当前插件版本为 **`0.6.1`**，目标平台为 **IntelliJ IDEA 2025.3 / GoLand 2025.3**；基于通用 IntelliJ Platform API，不依赖 GoLand 私有 API、Go 插件或 Java 插件。
@@ -124,3 +120,8 @@ IDE 应将文件识别为 Mio，并分别高亮关键字、类型、字符串、
 ## 当前不支持
 
 当前开发版尚未提供持久化 StubIndex、安全重命名、完整表达式类型推断、LSP 或 Debugger。字段跳转依赖显式类型或可直接识别的结构体字面量；解析结果不唯一时不会提供猜测式跳转。当前 Mio CLI 每次只返回第一条诊断，且目录输入和导入包错误的 JSON 尚未携带具体成员源文件路径；插件会保留多文件包语义完成检查，但不会把无法确认来源的范围猜测映射到当前编辑器。当前语义模型按 PSI 与 VFS 修改增量失效，Bunko 目录结构和源文件模型分别缓存。早期 Alpha Release 尚不包含 Bunko；插件不会自动下载未经 Release 校验信息覆盖的标准库源码。
+
+
+## 独立仓库开发与发布
+
+见 [MIGRATION.md](MIGRATION.md)。测试需要真实 CLI，不允许因缺少 Go 跳过 LSP 测试。VS Code 测试 CLI 来自 core-source.json 固定 SHA 的独立临时克隆，构建失败即测试失败。核心仓库的目标地址依赖 Transfer 完成；现有 Marketplace 版本与用户设置保持不变。
