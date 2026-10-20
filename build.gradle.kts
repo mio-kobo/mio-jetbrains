@@ -36,7 +36,7 @@ intellijPlatform {
 
     pluginConfiguration {
         id = "com.exmikupro.mio"
-        name = "Mio Language Support"
+        name = "Mio — Programming Language Tools"
         version = project.version.toString()
 
         ideaVersion {
