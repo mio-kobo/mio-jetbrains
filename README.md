@@ -124,4 +124,4 @@ IDE 应将文件识别为 Mio，并分别高亮关键字、类型、字符串、
 
 ## 独立仓库开发与发布
 
-见 [MIGRATION.md](MIGRATION.md)。测试需要真实 CLI，不允许因缺少 Go 跳过 LSP 测试。VS Code 测试 CLI 来自 core-source.json 固定 SHA 的独立临时克隆，构建失败即测试失败。核心仓库的目标地址依赖 Transfer 完成；现有 Marketplace 版本与用户设置保持不变。
+见 [MIGRATION.md](MIGRATION.md)。测试需要真实 CLI，不允许因缺少 Go 跳过 LSP 测试。VS Code 测试 CLI 来自 core-source.json 固定 SHA 的独立临时克隆，构建失败即测试失败。核心仓库现位于 `mio-kobo/mio`；现有 Marketplace 版本与用户设置保持不变。
