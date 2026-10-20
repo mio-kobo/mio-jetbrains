@@ -1,6 +1,6 @@
 
 
-<h1 align="center">Mio — Programming Language Tools</h1>
+<h1 align="center">Mio - Programming Language Tools</h1>
 
 <p align="center"><strong>为 Mio 编程语言打造的 JetBrains IDE 插件</strong></p>
 
@@ -10,7 +10,7 @@
   <a href="https://github.com/mio-kobo/mio/blob/Mio-2/docs/LANGUAGE.md">语言文档</a>
 </p>
 
-Mio — Programming Language Tools 提供 IntelliJ IDEA 和 GoLand 的 `.mio` 文件编辑、语言分析与运行支持。当前插件版本为 **`0.6.1`**，目标平台为 **IntelliJ IDEA 2025.3 / GoLand 2025.3**；基于通用 IntelliJ Platform API，不依赖 GoLand 私有 API、Go 插件或 Java 插件。
+Mio - Programming Language Tools 提供 IntelliJ IDEA 和 GoLand 的 `.mio` 文件编辑、语言分析与运行支持。当前插件版本为 **`0.6.1`**，目标平台为 **IntelliJ IDEA 2025.3 / GoLand 2025.3**；基于通用 IntelliJ Platform API，不依赖 GoLand 私有 API、Go 插件或 Java 插件。
 
 > 上图为 Mio 与 Mochi 的插件宣传插画。点击图片可查看原始 PNG。它是项目角色美术素材，使用与再分发授权应与代码许可分别确认。
 

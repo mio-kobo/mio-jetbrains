@@ -26,6 +26,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
+      - name: Release guard tests
+        run: python3 -B .github/scripts/test_plugin_release.py -v
       - name: Build, test and verify structure
         run: |
           xvfb-run -a bash ./gradlew --no-daemon --stacktrace \
@@ -33,6 +35,12 @@ jobs:
       - name: Full IDE compatibility verification (manual run)
         if: github.event_name == 'workflow_dispatch'
         run: bash ./gradlew --no-daemon --stacktrace verifyPlugin
+      - name: Release archive dry run (no publishing)
+        shell: bash
+        run: |
+          bash ./gradlew --no-daemon -q printReleaseVersion > "$RUNNER_TEMP/plugin-version.txt"
+          version=$(sed -n 's/^MIO_RELEASE_VERSION=//p' "$RUNNER_TEMP/plugin-version.txt")
+          python3 .github/scripts/plugin-release.py jetbrains "jetbrains-V$version" --gradle-version "$version" --archive "build/distributions/mio-language-support-$version.zip" --checksum
       - name: Upload plugin ZIP
         if: success()
         uses: actions/upload-artifact@v4

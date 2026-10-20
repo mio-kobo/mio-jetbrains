@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.exmikupro.mio</id>
-    <name>Mio — Programming Language Tools</name>
+    <name>Mio - Programming Language Tools</name>
     <vendor url="https://github.com/mio-kobo/mio">exmikupro</vendor>
 
     <depends>com.intellij.modules.platform</depends>

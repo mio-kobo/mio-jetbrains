@@ -7,3 +7,5 @@ Marketplace 身份保持不变。CI 可手动运行作为构建 Dry Run。真实
 发布历史守卫使用 main，标签格式保持 jetbrains-V<version>。原 Marketplace 版本记录继续以原市场页面为准，不伪造迁移标签。
 
 代码采用 MIT；历史中的角色宣传图和插件图标不能从代码许可证推断授权。沿用原素材授权说明；在新增对外分发前需核实素材权利。
+
+原工作树名称修改曾含 Unicode 破折号，Plugin Verifier 不接受；在独立保留提交后，将描述符中的显示名修正为 `Mio - Programming Language Tools`。插件 ID 与版本保持不变。
