@@ -10,7 +10,7 @@ import org.junit.Test
 class MioLexerTest {
     @Test
     fun `highlights all current keywords`() {
-        val source = "kaku waza kaesu moshi sore aida nukeru tsuzuku yobu kata sentaku awase baai koukai teisu"
+        val source = "kaku waza kaesu moshi sore aida nukeru tsuzuku yobu kata sentaku awase baai koukai teisu yuzuru"
         assertTrue(tokens(source).all { it.type == MioTokenTypes.KEYWORD })
     }
 

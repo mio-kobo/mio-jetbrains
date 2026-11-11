@@ -182,7 +182,7 @@ class MioLexer : LexerBase() {
         private val KEYWORDS = setOf(
             "kaku", "waza", "moshi", "sore", "kaesu",
             "aida", "nukeru", "tsuzuku", "yobu",
-            "kata", "sentaku", "awase", "baai", "koukai", "teisu",
+            "kata", "sentaku", "awase", "baai", "koukai", "teisu", "yuzuru",
         )
 
         private val BUILTIN_TYPES = setOf(
