@@ -135,9 +135,9 @@ class MioCompletionContributor : CompletionContributor() {
     companion object {
         private val STATEMENT_KEYWORDS = listOf(
             "kaku", "waza", "moshi", "sore", "kaesu", "aida", "nukeru", "tsuzuku",
-            "yobu", "kata", "sentaku", "awase", "baai", "koukai", "teisu",
+            "yobu", "kata", "sentaku", "awase", "baai", "koukai", "teisu", "yuzuru",
         )
-        private val EXPRESSION_KEYWORDS = listOf("waza", "moshi", "awase", "baai", "kaesu")
+        private val EXPRESSION_KEYWORDS = listOf("waza", "moshi", "awase", "baai", "kaesu", "yuzuru")
         private val BUILTIN_TYPES = listOf(
             "int8", "int16", "int32", "int64", "rune", "uint8", "uint16", "uint32",
             "float32", "float64", "bool", "string", "unit", "Map", "Number", "Integer", "Signed", "Float",
